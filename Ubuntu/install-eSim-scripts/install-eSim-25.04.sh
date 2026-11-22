@@ -221,7 +221,7 @@ function installDependency
     pip3 install matplotlib
 
     echo "Installing PyQt5............."
-    pip3 install PyQt5  
+    python3 -c "import PyQt5" 2>/dev/null || pip3 install PyQt5
 }
 
 
