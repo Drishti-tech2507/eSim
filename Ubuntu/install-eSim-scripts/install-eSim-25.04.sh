@@ -174,7 +174,7 @@ function installDependency
     sudo apt install python3-virtualenv
    
     echo "Creating virtual environment to isolate packages "
-    virtualenv $config_dir/env
+    virtualenv --system-site-packages $config_dir/env
     
     echo "Starting the virtual env..................."
     source $config_dir/env/bin/activate
